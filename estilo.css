@@ -1,0 +1,112 @@
+/* --- Reset Básico UTN --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* --- Encabezado y Menú --- */
+.logo-principal {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+}
+
+.menu-amarillo {
+    background-color: #d4af37; /* Dorado/Amarillo King */
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.menu-amarillo a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.separador {
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- Contenedor Principal (Main) --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #d4af37;
+    margin: 40px 0 10px 0;
+}
+
+/* --- NUEVO: ESTILOS DE LA GALERÍA (CSS GRID) --- */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cuadrícula adaptable */
+    gap: 30px; /* Espacio entre tarjetas */
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* Tarjeta individual de producto */
+.tarjeta-producto {
+    background-color: #0d0d0d;
+    border: 2px solid #d4af37; /* Borde dorado King */
+    border-radius: 12px;
+    overflow: hidden; /* Corta la imagen si sobresale */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta-producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor de texto dentro de la tarjeta */
+.info-producto {
+    padding: 20px;
+    text-align: left;
+}
+
+.info-producto h3 {
+    color: #d4af37;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+}
